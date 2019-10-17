@@ -124,14 +124,14 @@ STATIC_URL = '/static/'
 
 # Redis
 
-redis_host = socket.gethostbyname('redis-master')
+# redis_host = socket.gethostbyname('redis-master')
 
-CACHES = {
-    "default": {
-        "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": "redis://%s/1" % (redis_host),
-        "OPTIONS": {
-            "CLIENT_CLASS": "django_redis.client.DefaultClient",
-        }
-    }
-}
+# CACHES = {
+#     "default": {
+#         "BACKEND": "django_redis.cache.RedisCache",
+#         "LOCATION": "redis://%s/1" % (redis_host),
+#         "OPTIONS": {
+#             "CLIENT_CLASS": "django_redis.client.DefaultClient",
+#         }
+#     }
+# }
